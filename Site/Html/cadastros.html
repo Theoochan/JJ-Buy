@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/styleCadastros.css">
+    
+    <title>Cadastros</title>
+</head>
+
+
+
+<body>
+    <header>
+        <!--navbar-->
+        <nav>            
+            <div class="nav-links">
+                <a href="index.html">
+                    <img class="nav-icons" src="../imgs/logoNovSF.png" alt="logo" id="home">
+                </a>
+                <div id="botaoCad">
+                    <a id="linkCad" href="#">Imprimir Relatórios</a>
+                </div>
+                <a href="venda.html"><img class="nav-icons" src="../imgs/cart.webp" alt="carrinho"></a>
+                <a href="login.html"><img class="nav-icons" src="../imgs/user.webp" alt="usuario" ></a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar Produtos...">
+                <button>Buscar</button>
+            </div>
+        </nav>
+        <!--navbar-->
+    </header>
+
+    <main>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastar Transportadora</h1>
+                    </div>
+                    
+                </div>
+    
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="nome-transp">Nome Transportadora</label>
+                        <input id="nome-transp" type="text" placeholder="Digite o nome da Transportadora" required>
+                    </div>
+    
+                    <div class="input-box">
+                        <label for="descricao">Descrição</label>
+                        <input id="descricao" type="text" placeholder="Digite a Descrição da Transportadora" required>
+                    </div>
+    
+                    <div class="input-box">
+                        <label for="taxa">Taxa</label>
+                        <input id="taxa" type="text" placeholder="Digite a Taxa V/Kg" required>
+                    </div>
+    
+                    <div class="input-box">
+                        <label for="status">Status</label>
+                        <input id="status" type="text" placeholder="Status atual da Transportadora" required>
+                    </div>
+                    
+    
+                    
+                    <div class="continue-button">
+                        <button><a href="#">Cadastrar</a></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastar Produtos</h1>
+                    </div>
+                    
+                </div>
+    
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="nome-prod">Nome</label>
+                        <input id="nome-prod" type="text" placeholder="Digite o Nome do Produto" required>
+                    </div>
+    
+                    <div class="input-box">
+                        <label for="qntd-estoque">Quantidade Estoque</label>
+                        <input id="qntd-estoque" type="text" placeholder="Digite a Quantidade em Estoque do Produto" required>
+                    </div>
+    
+                    <div class="input-box">
+                        <label for="preco">Preço</label>
+                        <input id="preco" type="text" placeholder="Digite o Preço do Produto" required>
+                    </div>
+    
+                    <div class="input-box">
+                        <label for="peso">Peso</label>
+                        <input id="peso" type="text" placeholder="Digite o Peso do Produto" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="vol">Volume</label>
+                        <input id="vol" type="text" placeholder="Digite o Volume do Produto" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="descricao-prod">Descrição</label>
+                        <input id="descricao-prod" type="text" placeholder="Descreva o Produto" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="status-prod">Status</label>
+                        <input id="status-prod" type="text" placeholder="Digite o Status Atual do Produto" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="vol">Volume</label>
+                        <input id="vol" type="text" placeholder="Digite o Volume do Produto" required>
+                    </div>
+                    
+                    <div class="continue-button">
+                        <button><a href="#">Cadastrar</a></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    
+</body>
+</html>
