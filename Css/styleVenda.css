@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'inter';
+}
+/*cabeçalho*/
+header{
+    background-color:#0c0ce94d;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav-links{
+    display: flex;
+    align-self: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.nav-icons{
+    width: 30px;
+    transition: 0.3s;
+}
+nav > div > *{
+    margin: 10px;
+}
+#home{
+    width: 50px;
+}
+#botaoCad{
+    border-radius: 5px;
+    border: 0.8px solid black;
+    display: flex;
+    justify-content: center;
+    height: 25px;
+    width: 80px;
+    background-color: rgba(255, 255, 255, 0.641)
+}
+#linkCad{
+    margin-top: 3px;
+    display: inline-flex;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+/*responsividade navbar*/
+#linkCad:hover{
+    color: white;
+    background-color: black;
+}
+#botaoCad:hover{
+    color: white;
+    background-color: black;
+}
+.nav-icons:hover{
+    transform:translateY(10px);
+}
+
+/*barra de pesquisa*/
+.search-bar{
+    display: flex;
+    align-items: center;
+}
+.search-bar input[type="text"] {
+    text-decoration: none;
+    margin-right: 0px;
+    padding: 2px;
+    padding-left: 5px;
+    width: 150px;
+    height: 20px;
+    border-radius: 5px;
+    border: 0.8px solid #000000;
+    background-color: rgba(255, 255, 255, 0.475);
+}
+.search-bar button {
+    border: 0.8px solid #70bd7e;
+    color:  #70bd7e;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.475);
+    width: 50px;
+    height: 25px;
+    transition: 0.4s;
+}
+/*Responsividade da search bar*/
+.search-bar button:hover {
+    width: 55px;
+    height: 30px;
+    color: rgb(236, 236, 236);
+    background-color:  #70bd7e;
+}
+.search-bar input[type="text"]:focus{
+    outline: none;
+}
+
+/*main content*/
+
+main{
+    display: flex;
+    justify-content: center;
+}
+.content{
+    gap: 1rem;
+    width: 60%;
+    height: 80vh;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.product-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.product-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.product-list::-webkit-scrollbar-thumb {
+    background: #6c63ff;
+    border-radius: 5px;
+}
+
+.product-list::-webkit-scrollbar-thumb:hover {
+    background: #6c63fff1;
+}
+
+.product-list{
+    max-height: 50vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaço entre os cards */
+    padding: 2rem;
+
+    border-radius: 10px;
+    border: 1px solid #eeeeee75;
+    box-shadow: 5px 5px 5px #00000c1f;
+    
+}
+.product-card{
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #00000c4f ;
+}
+.product-img{
+    padding: 0.8rem;
+    display: flex;
+    width: 15%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #00000c1f;
+    background: #eeeeee75;
+}
+.product-img a img{
+    width: 100%;
+}
+
+.product-description{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.product-description h1{
+    font-weight: 400;
+}
+.product-description h3{
+    color: #6c63ff;
+    font-weight: 100;
+}
+.product-buttons{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: center;
+    padding: 0.5rem;
+}
+.checkbox{
+    width: 40%;
+    border-radius: 10px;
+}
+.quant{
+    width: 70%;
+    border: none;
+    box-shadow: 5px 5px 10px #00000c4f;
+    border-radius: 10px;
+    padding: 0.4rem;
+    padding-left: 0.8rem;
+    margin-right: 0.6rem;
+    
+}
+.quant:hover{
+    background-color: #00000c09;
+}
+.quant:focus-visible{
+    outline: none;
+}
+
+.product-sumary{
+    width: 25%;
+    height: 50vh;
+    flex-direction: column;
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    
+    flex-direction: column;
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 10px;
+   
+    box-shadow: 5px 5px 5px #00000c1f;
+}
+.product-sumary .title h1::after{
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #6c63ff;
+    position: absolute;
+    margin: 0 auto;
+    border-radius:  10px;
+}
+.product-sumary .description{
+    text-align: right;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.product-sumary .description h4{
+    font-weight: 300;
+    color: #a8a8a8f3;
+}
+.product-sumary .description h5{
+    color: #70bd7e;
+    font-weight: 200;
+}
+.product-sumary .description h3{
+    color: #6c63ff;
+    font-weight: 400;
+}
+.product-sumary button{
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #6c63ff;
+    padding: 0.62rem;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+.product-sumary button:hover{
+    transition: 300ms;
+    background-color: #6c63fff1;
+}
+
+.transport{
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilizando o select */
+.transport select {
+    width: 200px;
+    height: 150px; /* Define um tamanho maior para múltipla seleção */
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 5px;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Alterando a aparência dos itens selecionados */
+.transport select option {
+    padding: 10px;
+    font-size: 14px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+/* Quando um item é selecionado */
+.transport select option:checked {
+    background-color:#6c63ff !important; 
+    color: white;
+}
+
+
+/* Efeito hover nas opções */
+.transport select option:hover {
+    background-color: #e0e0e0;
+}
+
+/* Adicionando um estilo de rolagem mais bonito */
+.transport select::-webkit-scrollbar {
+    width: 8px;
+}
+
+.transport select::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.transport select::-webkit-scrollbar-thumb {
+    background: #6c63ff;
+    border-radius: 5px;
+}
+
+.transport select::-webkit-scrollbar-thumb:hover {
+    background: #6c63fff1;
+}
+
+@media screen and (min-height: 800px) {
+    .product-sumary{
+        gap: 10px;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    .product-sumary{
+        gap: 10px;
+    }
+  }
